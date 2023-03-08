@@ -2,16 +2,16 @@
 
 A React hook.
 
-## Install @garthmcrae/use-storage
+## Install garthmcrae/use-storage
 
 ```bash
-npm install --save @garthmcrae/use-storage
+npm install --save garthmcrae/use-storage
 ```
 
 ## Usage
 
 ```jsx
-import useStorage from "@garthmcrae/use-storage";
+import useStorage from "garthmcrae/use-storage";
 ...
 ```
 
