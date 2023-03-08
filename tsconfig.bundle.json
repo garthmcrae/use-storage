@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "importHelpers": true,
+  "include": [
+    "src/useStorage.ts"
+  ]
+}
