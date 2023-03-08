@@ -4,6 +4,7 @@
   "author": "Garth McRae",
   "license": "ISC",
   "source": "src/useStorage.ts",
+  "types": "./bundle/useStorage.d.ts",
   "main": "./bundle/bundle.esm.js",
   "files": [
     "bundle/*"
