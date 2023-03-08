@@ -1,6 +1,6 @@
 {
   "name": "@garthmcrae/use-storage",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Garth McRae",
   "license": "ISC",
   "types": "./bundle/useStorage.d.ts",
