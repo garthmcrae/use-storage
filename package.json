@@ -1,6 +1,6 @@
 {
   "name": "@garthmcrae/use-storage",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Garth McRae",
   "license": "ISC",
   "source": "src/useStorage.ts",
