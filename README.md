@@ -1,17 +1,17 @@
-# useStorage
+# Use storage
 
-A React hook.
+A React hook similar to `React.useState` that stores state in storage. State can be accessed anywhere in the application without the need for wrapping your application and or components in a provider.
 
-## Install garthmcrae/use-storage
+## Install
 
 ```bash
-npm install --save garthmcrae/use-storage
+npm install --save @garthmcrae/use-storage
 ```
 
 ## Usage
 
 ```jsx
-import useStorage from "garthmcrae/use-storage";
+import useStorage from "@garthmcrae/use-storage";
 ...
 ```
 
