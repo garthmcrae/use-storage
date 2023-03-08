@@ -15,7 +15,7 @@
     "build": "react-scripts build",
     "bundle": "rollup -c",
     "postversion": "git push && git push --tags && npm publish",
-    "prettier": "prettier --write src/**/*.{scss,ts,tsx}",
+    "prettier": "prettier --write src/**/*.{ts,tsx}",
     "preversion": "npm run prettier",
     "start": "react-scripts start",
     "test": "react-scripts test",
