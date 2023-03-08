@@ -3,9 +3,8 @@
   "version": "0.0.3",
   "author": "Garth McRae",
   "license": "ISC",
-  "source": "src/useStorage.ts",
   "types": "./bundle/useStorage.d.ts",
-  "main": "./bundle/bundle.esm.js",
+  "main": "./bundle/useStorage.esm.js",
   "files": [
     "bundle/*"
   ],
