@@ -11,7 +11,7 @@ npm install --save @garthmcrae/use-storage
 ## Usage
 
 ```jsx
-import useStorage from "./useStorage";
+import useStorage from "@garthmcrae/use-storage";
 
 const config = {
   key: "STORAGE_NAME",
