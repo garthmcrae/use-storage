@@ -1,9 +1,13 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { fireEvent, render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("renders ComponentA", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const paragraph = screen.getByText(/ComponentA/i);
+  const button = screen.getByText(/Set boo to baz/i);
+  expect(paragraph).toBeInTheDocument();
+  expect(button).toBeInTheDocument();
+  fireEvent.click(button);
+  expect(button.textContent).toBe("Set baz to baz");
 });
