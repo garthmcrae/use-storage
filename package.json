@@ -12,10 +12,14 @@
     "react": "^18.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "bundle": "rollup -c",
-    "test": "react-scripts test"
+    "postversion": "git push && git push --tags && npm publish",
+    "prettier": "prettier --write src/**/*.{scss,ts,tsx}",
+    "preversion": "npm run prettier",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "version": "npm run bundle"
   },
   "eslintConfig": {
     "extends": [

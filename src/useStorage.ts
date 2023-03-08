@@ -12,7 +12,7 @@ type UseStorageType<Type> = {
   value: Type;
   key: string;
   storage?: Storage;
-}
+};
 
 export default function useStorage<Type = any>({
   value,
@@ -31,19 +31,25 @@ export default function useStorage<Type = any>({
         storage.setItem(key, stringValue);
       }
     },
-    [stringValue, key, storage],
-  )
+    [stringValue, key, storage]
+  );
 
-  useEffect(function () {
-    setStateValue();
-  }, [setStateValue]);
+  useEffect(
+    function () {
+      setStateValue();
+    },
+    [setStateValue]
+  );
 
-  useEffect(function () {
-    window.addEventListener(key, setStateValue);
-    return function () {
-      window.removeEventListener(key, setStateValue);
-    };
-  }, [key, setStateValue]);
+  useEffect(
+    function () {
+      window.addEventListener(key, setStateValue);
+      return function () {
+        window.removeEventListener(key, setStateValue);
+      };
+    },
+    [key, setStateValue]
+  );
 
   function setStorage(payload: Type) {
     const stringPayload = string(payload);
