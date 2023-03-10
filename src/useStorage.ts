@@ -14,7 +14,7 @@ type UseStorageType<Type> = {
   storage?: Storage;
 };
 
-export default function useStorage<Type = any>({
+export default function useStorage<Type>({
   value,
   key,
   storage = sessionStorage,
